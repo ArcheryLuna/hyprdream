@@ -1,61 +1,61 @@
 /* MatugenDynamic GTK Theme Template */
 /* This template will be processed by Matugen to replace color variables */
 
-@define-color bg_color #11140f;
-@define-color fg_color #e1e4da;
-@define-color base_color #11140f;
-@define-color text_color #e1e4da;
-@define-color selected_bg_color #a6d394;
-@define-color selected_fg_color #13380a;
-@define-color tooltip_bg_color #32362f;
-@define-color tooltip_fg_color #e1e4da;
+@define-color bg_color #0f1416;
+@define-color fg_color #dee3e6;
+@define-color base_color #0f1416;
+@define-color text_color #dee3e6;
+@define-color selected_bg_color #87d1ea;
+@define-color selected_fg_color #003543;
+@define-color tooltip_bg_color #303638;
+@define-color tooltip_fg_color #dee3e6;
 
 /* Window colors */
-@define-color window_bg_color #11140f;
-@define-color window_fg_color #e1e4da;
+@define-color window_bg_color #0f1416;
+@define-color window_fg_color #dee3e6;
 
 /* Button colors */
-@define-color button_bg_color #1d211b;
-@define-color button_fg_color #e1e4da;
-@define-color button_active_bg_color #a6d394;
-@define-color button_active_fg_color #13380a;
+@define-color button_bg_color #1b2023;
+@define-color button_fg_color #dee3e6;
+@define-color button_active_bg_color #87d1ea;
+@define-color button_active_fg_color #003543;
 
 /* Entry colors */
-@define-color entry_bg_color #191d17;
-@define-color entry_fg_color #e1e4da;
+@define-color entry_bg_color #171c1f;
+@define-color entry_fg_color #dee3e6;
 
 /* Header bar colors */
-@define-color headerbar_bg_color #272b25;
-@define-color headerbar_fg_color #e1e4da;
+@define-color headerbar_bg_color #252b2d;
+@define-color headerbar_fg_color #dee3e6;
 
 /* Sidebar colors */
-@define-color sidebar_bg_color #1d211b;
-@define-color sidebar_fg_color #e1e4da;
+@define-color sidebar_bg_color #1b2023;
+@define-color sidebar_fg_color #dee3e6;
 
 /* Menu colors */
-@define-color menu_bg_color #32362f;
-@define-color menu_fg_color #e1e4da;
+@define-color menu_bg_color #303638;
+@define-color menu_fg_color #dee3e6;
 
 /* Tooltip colors */
-@define-color tooltip_bg_color #32362f;
-@define-color tooltip_fg_color #e1e4da;
+@define-color tooltip_bg_color #303638;
+@define-color tooltip_fg_color #dee3e6;
 
 /* Selection colors */
-@define-color selection_bg_color #a6d394;
-@define-color selection_fg_color #13380a;
+@define-color selection_bg_color #87d1ea;
+@define-color selection_fg_color #003543;
 
 /* Border colors */
-@define-color borders #8d9387;
-@define-color unfocused_borders #43483f;
+@define-color borders #899296;
+@define-color unfocused_borders #40484b;
 
 /* Link colors */
-@define-color link_color #a6d394;
-@define-color visited_link_color #bbcbb1;
+@define-color link_color #87d1ea;
+@define-color visited_link_color #b3cad4;
 
 /* Error colors */
 @define-color error_color #ffb4ab;
-@define-color warning_color #a0cfd1;
-@define-color success_color #bbcbb1;
+@define-color warning_color #c2c4eb;
+@define-color success_color #b3cad4;
 
 /* Global styles */
 * {

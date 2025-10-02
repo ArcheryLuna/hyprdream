@@ -2,7 +2,31 @@
 
 A comprehensive Arch Linux dotfiles configuration featuring a modern Hyprland-based desktop environment with beautiful themes, productivity tools, and automated installation.
 
-![Desktop Preview](sddm-theme/repo_assets/screenshot.png)
+## 📸 Preview Gallery
+
+### 🖥️ Desktop Themes
+
+<div align="center">
+
+**App Launcher**
+![Tokyo Night Desktop](previews/Tokyo-Night.png)
+
+**Theme Switcher**
+![Dracula Desktop](previews/Dracula-City.png)
+
+**Color Matching**
+![Nord Desktop](previews/Nord-Green.png)
+
+</div>
+
+### 🔐 Login Screen (SDDM)
+
+<div align="center">
+
+![SDDM Vitreous Theme](previews/sddm-preview.png)
+*Custom Vitreous SDDM theme with dynamic background*
+
+</div>
 
 ## ✨ Features
 
