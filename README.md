@@ -62,8 +62,12 @@ A comprehensive Arch Linux dotfiles configuration featuring a modern Hyprland-ba
 - **Network**: NetworkManager
 - **File Manager**: Nautilus
 - **PDF Viewer**: Okular
-- **Image Viewer**: GPicview (Not Working)
-- **Screenshot**: Hyprshot and Grim/Slurp
+- **Image Viewer**: GPicview
+- **Screenshot System**: Enhanced multi-mode screenshot tool
+  - Region selection, window capture, fullscreen, monitor selection
+  - Automatic clipboard integration and notifications
+  - Multiple backends (grim/slurp, hyprshot)
+  - Interactive mode selection
 - **Wallpaper Manager**: SWWW
 
 ## 📦 Installation
@@ -146,6 +150,24 @@ The configuration supports multiple themes that can be switched dynamically:
 - Run `matugen image /path/to/wallpaper` to generate colors from any image
 - Themes automatically update Waybar, terminal, and other applications
 
+### Screenshot System
+The enhanced screenshot system provides multiple capture modes:
+
+- **Region Mode** (`Super + Shift + S`): Select any area of the screen
+- **Window Mode** (`Super + Alt + S`): Capture the currently active window
+- **Fullscreen Mode** (`Super + Print`): Capture the entire screen
+- **Monitor Mode** (`Super + Shift + M`): Select and capture a specific monitor
+- **Interactive Mode** (`Super + Shift + Print`): Choose mode from a menu
+
+**Features:**
+- **Automatic clipboard integration** (all screenshots copied instantly)
+- Desktop notifications with file size and location
+- Smart file naming with timestamps
+- Multiple backend support (grim/slurp preferred, hyprshot fallback)
+- Option to open screenshots immediately after capture
+- Configurable save locations and formats
+- Option to disable clipboard with `--no-clipboard` flag
+
 ## ⌨️ Key Bindings
 
 ### Window Management
@@ -160,13 +182,20 @@ The configuration supports multiple themes that can be switched dynamically:
 - `Super + Space` - Application launcher (Walker)
 - `Super + E` - File manager (Nautilus)
 - `Super + I` - Image viewer (GPicview)
+- `Super + V` - Clipboard history manager
 - `Super + B` - Browser (Firefox)
 
 ### System
 - `Super + L` - Lock screen
 - `Super + Shift + E` - Logout menu
-- `Print` - Screenshot
 - `Super + T` - Theme switcher
+
+### Screenshots
+- `Super + Print` - Fullscreen screenshot
+- `Super + Shift + S` - Region screenshot (select area)
+- `Super + Alt + S` - Window screenshot (active window)
+- `Super + Shift + M` - Monitor screenshot (select monitor)
+- `Super + Shift + Print` - Interactive screenshot mode
 
 ## 🔧 Customization
 

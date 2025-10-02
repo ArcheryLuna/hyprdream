@@ -117,3 +117,4 @@ yay 12.5.2-2
 yay-debug 12.5.2-2
 zoxide 0.9.8-2
 zsh 5.9-5
+cliphist
