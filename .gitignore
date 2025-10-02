@@ -143,6 +143,7 @@ current-wallpaper
 # Other generated theme files
 .config/tmux/tmux.conf
 .config/fastfetch/config.jsonc
+.config/hyprlock/hyprlock.conf
 
 # Backup files created during theme switching
 *.conf.bak

@@ -68,6 +68,11 @@ A comprehensive Arch Linux dotfiles configuration featuring a modern Hyprland-ba
   - Automatic clipboard integration and notifications
   - Multiple backends (grim/slurp, hyprshot)
   - Interactive mode selection
+- **Lock Screen**: macOS-inspired hyprlock with hypridle
+  - Automatic screen locking and power management
+  - Beautiful blurred background with user avatar
+  - Real-time clock, date, weather, and system info
+  - Theme-integrated colors and styling
 - **Wallpaper Manager**: SWWW
 
 ## 📦 Installation
@@ -186,7 +191,7 @@ The enhanced screenshot system provides multiple capture modes:
 - `Super + B` - Browser (Firefox)
 
 ### System
-- `Super + L` - Lock screen
+- `Super + L` - Lock screen (macOS-style with hyprlock)
 - `Super + Shift + E` - Power menu (logout/shutdown/reboot)
 - `Super + T` - Theme switcher
 

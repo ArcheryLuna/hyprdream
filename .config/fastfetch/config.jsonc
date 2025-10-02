@@ -14,7 +14,7 @@
   "modules": [
     {
       "type": "title",
-      "format": "{##bdc7dc}{user-name-colored}{#}@{##dbbce2}{host-name-colored}{#}"
+      "format": "{##bfc6dc}{user-name-colored}{#}@{##dfbbde}{host-name-colored}{#}"
     },
     {
       "type": "separator",
@@ -23,113 +23,113 @@
     {
       "type": "os",
       "key": " OS",
-      "keyColor": "#a7c8ff"
+      "keyColor": "#aec6ff"
     },
     {
       "type": "host",
       "key": "󰌢 Host",
-      "keyColor": "#a7c8ff"
+      "keyColor": "#aec6ff"
     },
     {
       "type": "kernel",
       "key": " Kernel",
-      "keyColor": "#a7c8ff"
+      "keyColor": "#aec6ff"
     },
     {
       "type": "uptime",
       "key": " Uptime",
-      "keyColor": "#a7c8ff"
+      "keyColor": "#aec6ff"
     },
     {
       "type": "packages",
       "key": "󰏖 Packages",
-      "keyColor": "#a7c8ff"
+      "keyColor": "#aec6ff"
     },
     {
       "type": "shell",
       "key": " Shell",
-      "keyColor": "#a7c8ff"
+      "keyColor": "#aec6ff"
     },
     {
       "type": "display",
       "key": "󰍹 Display",
-      "keyColor": "#a7c8ff"
+      "keyColor": "#aec6ff"
     },
     {
       "type": "de",
       "key": " DE",
-      "keyColor": "#a7c8ff"
+      "keyColor": "#aec6ff"
     },
     {
       "type": "wm",
       "key": " WM",
-      "keyColor": "#a7c8ff"
+      "keyColor": "#aec6ff"
     },
     {
       "type": "wmtheme",
       "key": "󰉼 WM Theme",
-      "keyColor": "#a7c8ff"
+      "keyColor": "#aec6ff"
     },
     {
       "type": "theme",
       "key": "🎨 Theme",
-      "keyColor": "#a7c8ff"
+      "keyColor": "#aec6ff"
     },
     {
       "type": "icons",
       "key": "󰀻 Icons",
-      "keyColor": "#a7c8ff"
+      "keyColor": "#aec6ff"
     },
     {
       "type": "font",
       "key": " Font",
-      "keyColor": "#a7c8ff"
+      "keyColor": "#aec6ff"
     },
     {
       "type": "cursor",
       "key": "󰇀 Cursor",
-      "keyColor": "#a7c8ff"
+      "keyColor": "#aec6ff"
     },
     {
       "type": "terminal",
       "key": " Terminal",
-      "keyColor": "#a7c8ff"
+      "keyColor": "#aec6ff"
     },
     {
       "type": "terminalfont",
       "key": " Terminal Font",
-      "keyColor": "#a7c8ff"
+      "keyColor": "#aec6ff"
     },
     {
       "type": "cpu",
       "key": "󰻠 CPU",
-      "keyColor": "#dbbce2"
+      "keyColor": "#dfbbde"
     },
     {
       "type": "gpu",
       "key": "󰢮 GPU",
-      "keyColor": "#dbbce2"
+      "keyColor": "#dfbbde"
     },
     {
       "type": "memory",
       "key": " Memory",
-      "keyColor": "#bdc7dc"
+      "keyColor": "#bfc6dc"
     },
     {
       "type": "swap",
       "key": "󰓡 Swap",
-      "keyColor": "#bdc7dc"
+      "keyColor": "#bfc6dc"
     },
     {
       "type": "disk",
       "key": "󰋊 Disk (/)",
-      "keyColor": "#bdc7dc",
+      "keyColor": "#bfc6dc",
       "folders": "/"
     },
     {
       "type": "localip",
       "key": "󰩟 Local IP",
-      "keyColor": "#553e5d"
+      "keyColor": "#583e5a"
     },
     {
       "type": "battery",
@@ -144,7 +144,7 @@
     {
       "type": "locale",
       "key": "󰗊 Locale",
-      "keyColor": "#e1e2e9"
+      "keyColor": "#e2e2e9"
     },
     {
       "type": "break"

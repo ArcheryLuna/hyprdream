@@ -1,4 +1,4 @@
-/* Tokyo Night Wlogout Theme */
+/* Nord Wlogout Theme */
 
 * {
     background-image: none;
@@ -6,17 +6,17 @@
 }
 
 window {
-    background-color: rgba(26, 27, 38, 0.95);
-    background-image: url("/home/seb/Wallpapers/Japan-Is-Beautiful.png");
+    background-color: rgba(46, 52, 64, 0.95);
+    background-image: url("/home/seb/Wallpapers/the-mountains.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 button {
-    color: #c0caf5;
-    background-color: rgba(26, 27, 38, 0.8);
-    border: 2px solid #7aa2f7;
+    color: #d8dee9;
+    background-color: rgba(46, 52, 64, 0.8);
+    border: 2px solid #88c0d0;
     border-radius: 20px;
     background-repeat: no-repeat;
     background-position: center;
@@ -30,18 +30,18 @@ button {
 button:focus,
 button:active,
 button:hover {
-    background-color: rgba(122, 162, 247, 0.2);
-    border: 2px solid #9aa5ce;
-    color: #9aa5ce;
-    box-shadow: 0 0 20px rgba(122, 162, 247, 0.5);
+    background-color: rgba(136, 192, 208, 0.2);
+    border: 2px solid #b48ead;
+    color: #b48ead;
+    box-shadow: 0 0 20px rgba(136, 192, 208, 0.5);
 }
 
 /* Selected/focused button styling */
 button:focus {
-    background-color: rgba(122, 162, 247, 0.3);
-    border: 3px solid #7aa2f7;
-    color: #c0caf5;
-    box-shadow: 0 0 25px rgba(122, 162, 247, 0.7);
+    background-color: rgba(136, 192, 208, 0.3);
+    border: 3px solid #88c0d0;
+    color: #d8dee9;
+    box-shadow: 0 0 25px rgba(136, 192, 208, 0.7);
     outline: none;
     background-image: none;
 }
