@@ -1,4 +1,4 @@
-/* Dracula Wlogout Theme */
+/* Tokyo Night Wlogout Theme */
 
 * {
     background-image: none;
@@ -6,17 +6,17 @@
 }
 
 window {
-    background-color: rgba(40, 42, 54, 0.95);
-    background-image: url("/home/seb/Wallpapers/Tokyo-Night-Life.jpg");
+    background-color: rgba(26, 27, 38, 0.95);
+    background-image: url("/home/seb/Wallpapers/Japan-Is-Beautiful.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 button {
-    color: #f8f8f2;
-    background-color: rgba(40, 42, 54, 0.8);
-    border: 2px solid #bd93f9;
+    color: #c0caf5;
+    background-color: rgba(26, 27, 38, 0.8);
+    border: 2px solid #7aa2f7;
     border-radius: 20px;
     background-repeat: no-repeat;
     background-position: center;
@@ -30,18 +30,18 @@ button {
 button:focus,
 button:active,
 button:hover {
-    background-color: rgba(189, 147, 249, 0.2);
-    border: 2px solid #ff79c6;
-    color: #ff79c6;
-    box-shadow: 0 0 20px rgba(189, 147, 249, 0.5);
+    background-color: rgba(122, 162, 247, 0.2);
+    border: 2px solid #9aa5ce;
+    color: #9aa5ce;
+    box-shadow: 0 0 20px rgba(122, 162, 247, 0.5);
 }
 
 /* Selected/focused button styling */
 button:focus {
-    background-color: rgba(189, 147, 249, 0.3);
-    border: 3px solid #bd93f9;
-    color: #f8f8f2;
-    box-shadow: 0 0 25px rgba(189, 147, 249, 0.7);
+    background-color: rgba(122, 162, 247, 0.3);
+    border: 3px solid #7aa2f7;
+    color: #c0caf5;
+    box-shadow: 0 0 25px rgba(122, 162, 247, 0.7);
     outline: none;
     background-image: none;
 }

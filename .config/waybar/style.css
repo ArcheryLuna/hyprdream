@@ -1,4 +1,4 @@
-/* Dracula Waybar Theme */
+/* Tokyo Night Waybar Theme */
 
 /* Global Styles */
 * {
@@ -13,7 +13,7 @@
 /* Waybar Container */
 #waybar {
   background: transparent;
-  color: #f8f8f2;
+  color: #c0caf5;
   margin: 0px;
   font-weight: 500;
 }
@@ -22,11 +22,11 @@
 #workspaces,
 #custom-uptime,
 #cpu {
-  background-color: #282a36;
+  background-color: #1a1b26;
   padding: 0.3rem 0.7rem;
   margin: 5px 0px;
   border-radius: 6px;
-  box-shadow: 0 1px 3px rgba(189, 147, 249, 0.2);
+  box-shadow: 0 1px 3px rgba(122, 162, 247, 0.2);
   min-width: 0;
   border: none;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -45,11 +45,11 @@
 /* Hover effects */
 #custom-uptime:hover,
 #cpu:hover {
-  background-color: #44475a;
+  background-color: #24283b;
 }
 
 #workspaces button {
-  color: #bd93f9;
+  color: #7aa2f7;
   border-radius: 5px;
   padding: 0.3rem 0.6rem;
   background: transparent;
@@ -59,19 +59,19 @@
 }
 
 #workspaces button.active {
-  color: #bd93f9;
-  background-color: rgba(189, 147, 249, 0.1);
-  box-shadow: inset 0 0 0 1px rgba(189, 147, 249, 0.2);
+  color: #7aa2f7;
+  background-color: rgba(122, 162, 247, 0.1);
+  box-shadow: inset 0 0 0 1px rgba(122, 162, 247, 0.2);
 }
 
 #workspaces button:hover {
-  background: rgba(189, 147, 249, 0.1);
-  color: #f8f8f2;
+  background: rgba(122, 162, 247, 0.1);
+  color: #c0caf5;
 }
 
 /* Center Module */
 #clock {
-  background-color: #282a36;
+  background-color: #1a1b26;
   padding: 0.3rem 0.7rem;
   margin: 5px 0px;
   border-radius: 6px;
@@ -82,11 +82,11 @@
 }
 
 #clock:hover {
-  background-color: #44475a;
+  background-color: #24283b;
 }
 
 #custom-music {
-  background-color: #282a36;
+  background-color: #1a1b26;
   padding: 0.3rem 0.7rem;
   margin: 5px 0px;
   border-radius: 6px;
@@ -95,7 +95,7 @@
   border: none;
   outline: none;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, outline 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  color: #6272a4;
+  color: #9aa5ce;
   font-weight: 600;
 }
 
@@ -105,21 +105,21 @@
 }
 
 #custom-music:hover {
-  background-color: #44475a;
-  color: #f8f8f2;
+  background-color: #24283b;
+  color: #c0caf5;
   outline: 1px solid rgba(255, 255, 255, 0.1);
   outline-offset: -1px;
 }
 
 #custom-music.playing {
-  color: #bd93f9;
-  background-color: rgba(189, 147, 249, 0.1);
-  box-shadow: inset 0 0 0 1px rgba(189, 147, 249, 0.2);
+  color: #7aa2f7;
+  background-color: rgba(122, 162, 247, 0.1);
+  box-shadow: inset 0 0 0 1px rgba(122, 162, 247, 0.2);
   outline: none;
 }
 
 #tray {
-  background-color: #282a36;
+  background-color: #1a1b26;
   padding: 0.3rem 0.7rem;
   margin: 5px 0px;
   border-radius: 6px;
@@ -128,7 +128,7 @@
   border: none;
   outline: none;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, outline 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  color: #6272a4;
+  color: #9aa5ce;
   font-weight: 600;
 }
 
@@ -138,8 +138,8 @@
 }
 
 #tray:hover {
-  background-color: #44475a;
-  color: #f8f8f2;
+  background-color: #24283b;
+  color: #c0caf5;
   outline: 1px solid rgba(255, 255, 255, 0.1);
   outline-offset: -1px;
 }
@@ -151,7 +151,7 @@
 #network,
 #custom-lock,
 #battery {
-  background-color: #282a36;
+  background-color: #1a1b26;
   padding: 0.3rem 0.7rem;
   margin: 5px 0px; 
   border-radius: 0;
@@ -167,7 +167,7 @@
 #network:hover,
 #custom-lock:hover,
 #battery:hover {
-  background-color: #44475a;
+  background-color: #24283b;
 }
 
 #bluetooth {
@@ -183,68 +183,68 @@
 }
 
 #custom-uptime {
-  color: #6272a4;
+  color: #9aa5ce;
 }
 
 #cpu {
-  color: #f8f8f2;
+  color: #c0caf5;
 }
 
 #clock {
-  color: #6272a4;
+  color: #9aa5ce;
   font-weight: 500;
   margin-right: 5px;
 }
 
 #pulseaudio {
-  color: #f8f8f2;
+  color: #c0caf5;
 }
 
 #backlight {
-  color: #f8f8f2;
+  color: #c0caf5;
 }
 
 #network {
-  color: #f8f8f2;
+  color: #c0caf5;
 }
 
 #network.disconnected {
-  color: #ff5555;
+  color: #f7768e;
 }
 
 #custom-lock {
-  color: #6272a4;
+  color: #9aa5ce;
 }
 
 #bluetooth {
-  color: #6272a4;
+  color: #565f89;
   font-size: 16px;
 }
 
 #bluetooth.on {
-  color: #bd93f9;
+  color: #7aa2f7;
 }
 
 #bluetooth.connected {
-  color: #bd93f9;
+  color: #7aa2f7;
 }
 
 #battery {
-  color: #bd93f9;
+  color: #7aa2f7;
 }
 
 #battery.charging {
-  color: #50fa7b;
+  color: #9ece6a;
 }
 
 #battery.warning:not(.charging) {
-  color: #ff5555;
+  color: #f7768e;
 }
 
 /* Tooltip Styles */
 tooltip {
-  background-color: #282a36;
-  color: #f8f8f2;
+  background-color: #1a1b26;
+  color: #c0caf5;
   padding: 5px 12px;
   margin: 5px 0px;
   border-radius: 6px;

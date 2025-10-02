@@ -3,17 +3,17 @@
 * Generated with Matugen
 */
 
-@define-color surface #0f1416;
-@define-color surface_variant #40484b;
-@define-color primary #87d1ea;
-@define-color on_primary #003543;
-@define-color secondary #b3cad4;
-@define-color on_secondary #1d333b;
-@define-color tertiary #c2c4eb;
-@define-color on_tertiary #2b2e4d;
+@define-color surface #111318;
+@define-color surface_variant #43474e;
+@define-color primary #a7c8ff;
+@define-color on_primary #04305f;
+@define-color secondary #bdc7dc;
+@define-color on_secondary #273141;
+@define-color tertiary #dbbce2;
+@define-color on_tertiary #3e2845;
 @define-color error #ffb4ab;
 @define-color on_error #690005;
-@define-color outline #899296;
+@define-color outline #8e9199;
 @define-color shadow #000000;
 @define-color scrim #000000;
 

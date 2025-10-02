@@ -159,6 +159,7 @@ The configuration supports multiple themes that can be switched dynamically:
 - `Super + Return` - Terminal (Kitty)
 - `Super + Space` - Application launcher (Walker)
 - `Super + E` - File manager (Nautilus)
+- `Super + I` - Image viewer (GPicview)
 - `Super + B` - Browser (Firefox)
 
 ### System

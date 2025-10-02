@@ -116,3 +116,35 @@ hostname
 machine-id
 
 .config/git/config
+
+# Generated color files and theme files (change frequently with theme switching)
+# Matugen generated files
+.config/hypr/colors/colors.conf
+.config/kitty/colors.conf
+.config/swaync/colors.css
+.config/qt5ct/colors/matugen-dynamic.conf
+.config/qt6ct/colors/matugen-dynamic.conf
+.config/btop/themes/matugen.theme
+.config/fzf/colors.sh
+.config/starship.toml
+
+# Dynamic theme files
+.themes/MatugenDynamic/
+.cache/matugen/
+
+# Current theme state files
+.config/waybar/current-theme
+
+# Temporary color generation files
+/tmp/matugen_colors.json
+colors-hyprland.conf
+current-wallpaper
+
+# Other generated theme files
+.config/tmux/tmux.conf
+.config/fastfetch/config.jsonc
+
+# Backup files created during theme switching
+*.conf.bak
+*.css.bak
+*.toml.bak
