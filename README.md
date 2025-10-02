@@ -62,7 +62,7 @@ A comprehensive Arch Linux dotfiles configuration featuring a modern Hyprland-ba
 - **Network**: NetworkManager
 - **File Manager**: Nautilus
 - **PDF Viewer**: Okular
-- **Image Viewer**: GPicview
+- **Image Viewer**: GPicview (Not Working)
 - **Screenshot**: Hyprshot and Grim/Slurp
 - **Wallpaper Manager**: SWWW
 
