@@ -174,8 +174,8 @@ The enhanced screenshot system provides multiple capture modes:
 - `Super + Q` - Close window
 - `Super + F` - Toggle fullscreen
 - `Super + Space` - Toggle floating
-- `Super + Arrow Keys` - Move focus
-- `Super + Shift + Arrow Keys` - Move windows
+- `Super + H/J/K/L` - Move focus (Vim keys: left/down/up/right)
+- `Super + Shift + H/J/K/L` - Move windows (Vim keys: left/down/up/right)
 
 ### Applications
 - `Super + Return` - Terminal (Kitty)
@@ -187,7 +187,7 @@ The enhanced screenshot system provides multiple capture modes:
 
 ### System
 - `Super + L` - Lock screen
-- `Super + Shift + E` - Logout menu
+- `Super + Shift + E` - Power menu (logout/shutdown/reboot)
 - `Super + T` - Theme switcher
 
 ### Screenshots
