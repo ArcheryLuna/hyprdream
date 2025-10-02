@@ -1,0 +1,327 @@
+# version: 1.0.0
+
+add_newline = true
+continuation_prompt = "[▸▹ ](dimmed {{colors.on_surface_variant.default.hex}})"
+
+format = """($nix_shell$container$fill$git_metrics\n)$cmd_duration\
+$hostname\
+$localip\
+$shlvl\
+$shell\
+$env_var\
+$jobs\
+$sudo\
+$username\
+$character"""
+
+right_format = """
+$singularity\
+$kubernetes\
+$directory\
+$vcsh\
+$fossil_branch\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$hg_branch\
+$pijul_channel\
+$docker_context\
+$package\
+$c\
+$cpp\
+$cmake\
+$cobol\
+$daml\
+$dart\
+$deno\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$fennel\
+$golang\
+$guix_shell\
+$haskell\
+$haxe\
+$helm\
+$java\
+$julia\
+$kotlin\
+$gradle\
+$lua\
+$nim\
+$nodejs\
+$ocaml\
+$opa\
+$perl\
+$php\
+$pulumi\
+$purescript\
+$python\
+$raku\
+$rlang\
+$red\
+$ruby\
+$rust\
+$scala\
+$solidity\
+$swift\
+$terraform\
+$vlang\
+$vagrant\
+$zig\
+$buf\
+$conda\
+$pixi\
+$meson\
+$spack\
+$memory_usage\
+$aws\
+$gcloud\
+$openstack\
+$azure\
+$crystal\
+$custom\
+$status\
+$os\
+$battery\
+$time"""
+
+[fill]
+symbol = ' '
+
+[character]
+format = "$symbol "
+success_symbol = "[◎](bold italic {{colors.tertiary.default.hex}})"
+error_symbol = "[○](italic {{colors.error.default.hex}})"
+vimcmd_symbol = "[■](italic dimmed {{colors.primary.default.hex}})"
+# not supported in zsh
+vimcmd_replace_one_symbol = "◌"
+vimcmd_replace_symbol = "□"
+vimcmd_visual_symbol = "▼"
+
+[env_var.VIMSHELL]
+format = "[$env_value]($style)"
+style = '{{colors.tertiary.default.hex}} italic'
+
+[sudo]
+format = "[$symbol]($style)"
+style = "bold italic {{colors.primary.default.hex}}"
+symbol = "⋈┈"
+disabled = false
+
+[username]
+style_user = "{{colors.tertiary.default.hex}} bold italic"
+style_root = "{{colors.error.default.hex}} bold italic"
+format = "[⭘ $user]($style) "
+disabled = false
+show_always = false
+
+[directory]
+home_symbol = "⌂"
+truncation_length = 2
+truncation_symbol = "□ "
+read_only = " ◈"
+use_os_path_sep = true
+style = "italic {{colors.primary.default.hex}}"
+format = '[$path]($style)[$read_only]($read_only_style)'
+repo_root_style = 'bold {{colors.primary.default.hex}}'
+repo_root_format = '[$before_root_path]($before_repo_root_style)[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style) [△](bold {{colors.primary.default.hex}})'
+
+[cmd_duration]
+format = "[◄ $duration ](italic {{colors.on_surface_variant.default.hex}})"
+min_time = 2_000
+show_milliseconds = false
+
+[jobs]
+format = "[$symbol$number]($style) "
+style = "{{colors.on_surface.default.hex}}"
+symbol = "[▶]({{colors.primary.default.hex}} italic)"
+
+[localip]
+ssh_only = true
+format = " ◯[$localipv4](bold {{colors.tertiary.default.hex}})"
+disabled = false
+
+[time]
+disabled = false
+format = "[ $time]($style)"
+time_format = "%H:%M:%S"
+utc_time_offset = "local"
+style = "italic dimmed {{colors.on_surface_variant.default.hex}}"
+
+[battery]
+format = "[ $percentage $symbol]($style)"
+full_symbol = "█"
+charging_symbol = "[↑](italic bold {{colors.tertiary.default.hex}})"
+discharging_symbol = "↓"
+unknown_symbol = "░"
+empty_symbol = "▃"
+
+[[battery.display]]
+threshold = 20
+style = "italic bold {{colors.error.default.hex}}"
+
+[[battery.display]]
+threshold = 60
+style = "italic dimmed {{colors.primary.default.hex}}"
+
+[[battery.display]]
+threshold = 70
+style = "italic dimmed {{colors.tertiary.default.hex}}"
+
+[git_branch]
+format = " [$branch(:$remote_branch)]($style)"
+symbol = "[△](bold italic {{colors.primary.default.hex}})"
+style = "italic {{colors.primary.default.hex}}"
+truncation_symbol = "⋯"
+truncation_length = 11
+ignore_branches = ["main", "master"]
+only_attached = true
+
+[git_metrics]
+format = '([▴$added]($added_style))([▿$deleted]($deleted_style))'
+added_style = 'italic dimmed {{colors.tertiary.default.hex}}'
+deleted_style = 'italic dimmed {{colors.error.default.hex}}'
+ignore_submodules = true
+disabled = false
+
+[git_status]
+style = "bold italic {{colors.primary.default.hex}}"
+format = "([⎪$ahead_behind$staged$modified$untracked$renamed$deleted$conflicted$stashed⎥]($style))"
+conflicted = "[◪◦](italic {{colors.error.default.hex}})"
+ahead = "[▴│[${count}](bold {{colors.on_surface.default.hex}})│](italic {{colors.tertiary.default.hex}})"
+behind = "[▿│[${count}](bold {{colors.on_surface.default.hex}})│](italic {{colors.error.default.hex}})"
+diverged = "[◇ ▴┤[${ahead_count}](regular {{colors.on_surface.default.hex}})│▿┤[${behind_count}](regular {{colors.on_surface.default.hex}})│](italic {{colors.error.default.hex}})"
+untracked = "[◌◦](italic {{colors.tertiary.default.hex}})"
+stashed = "[◃◈](italic {{colors.on_surface.default.hex}})"
+modified = "[●◦](italic {{colors.tertiary.default.hex}})"
+staged = "[▪┤[$count](bold {{colors.on_surface.default.hex}})│](italic {{colors.primary.default.hex}})"
+renamed = "[◎◦](italic {{colors.primary.default.hex}})"
+deleted = "[✕](italic {{colors.error.default.hex}})"
+
+[deno]
+format = " [deno](italic) [∫ $version]({{colors.tertiary.default.hex}} bold)"
+version_format = "${raw}"
+
+[lua]
+format = " [lua](italic) [${symbol}${version}]($style)"
+version_format = "${raw}"
+symbol = "⨀ "
+style = "bold {{colors.tertiary.default.hex}}"
+
+[nodejs]
+format = " [node](italic) [◫ ($version)](bold {{colors.tertiary.default.hex}})"
+version_format = "${raw}"
+detect_files = ["package-lock.json", "yarn.lock"]
+detect_folders = ["node_modules"]
+detect_extensions = []
+
+[python]
+format = " [py](italic) [${symbol}${version}]($style)"
+symbol = "[⌉](bold {{colors.primary.default.hex}})⌊ "
+version_format = "${raw}"
+style = "bold {{colors.tertiary.default.hex}}"
+
+[ruby]
+format = " [rb](italic) [${symbol}${version}]($style)"
+symbol = "◆ "
+version_format = "${raw}"
+style = "bold {{colors.error.default.hex}}"
+
+[rust]
+format = " [rs](italic) [$symbol$version]($style)"
+symbol = "⊃ "
+version_format = "${raw}"
+style = "bold {{colors.error.default.hex}}"
+
+[package]
+format = " [pkg](italic dimmed) [$symbol$version]($style)"
+version_format = "${raw}"
+symbol = "◨ "
+style = "dimmed {{colors.tertiary.default.hex}} italic bold"
+
+[swift]
+format = " [sw](italic) [${symbol}${version}]($style)"
+symbol = "◁ "
+style = "bold {{colors.error.default.hex}}"
+version_format = "${raw}"
+
+[aws]
+disabled = true
+format = " [aws](italic) [$symbol $profile $region]($style)"
+style = "bold {{colors.primary.default.hex}}"
+symbol = "▲ "
+
+[buf]
+symbol = "■ "
+format = " [buf](italic) [$symbol $version $buf_version]($style)"
+
+[c]
+symbol = "ℂ "
+format = " [$symbol($version(-$name))]($style)"
+
+[cpp]
+symbol = "ℂ "
+format = " [$symbol($version(-$name))]($style)"
+
+[conda]
+symbol = "◯ "
+format = " conda [$symbol$environment]($style)"
+
+[pixi]
+symbol = "■ "
+format = " pixi [$symbol$version ($environment )]($style)"
+
+[dart]
+symbol = "◁◅ "
+format = " dart [$symbol($version )]($style)"
+
+[docker_context]
+symbol = "◧ "
+format = " docker [$symbol$context]($style)"
+
+[elixir]
+symbol = "△ "
+format = " exs [$symbol $version OTP $otp_version ]($style)"
+
+[elm]
+symbol = "◩ "
+format = " elm [$symbol($version )]($style)"
+
+[golang]
+symbol = "∩ "
+format = " go [$symbol($version )]($style)"
+
+[haskell]
+symbol = "❯λ "
+format = " hs [$symbol($version )]($style)"
+
+[java]
+symbol = "∪ "
+format = " java [${symbol}(${version} )]($style)"
+
+[julia]
+symbol = "◎ "
+format = " jl [$symbol($version )]($style)"
+
+[memory_usage]
+symbol = "▪▫▪ "
+format = " mem [${ram}( ${swap})]($style)"
+
+[nim]
+symbol = "▴▲▴ "
+format = " nim [$symbol($version )]($style)"
+
+[nix_shell]
+style = 'bold italic dimmed {{colors.primary.default.hex}}'
+symbol = '✶'
+format = '[$symbol nix⎪$state⎪]($style) [$name](italic dimmed {{colors.on_surface.default.hex}})'
+impure_msg = '[⌽](bold dimmed {{colors.error.default.hex}})'
+pure_msg = '[⌾](bold dimmed {{colors.tertiary.default.hex}})'
+unknown_msg = '[◌](bold dimmed {{colors.tertiary.default.hex}})'
+
+[spack]
+symbol = "◇ "
+format = " spack [$symbol$environment]($style)"

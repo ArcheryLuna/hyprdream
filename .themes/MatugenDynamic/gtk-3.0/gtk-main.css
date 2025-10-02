@@ -1,0 +1,114 @@
+/* MatugenDynamic GTK3 Main Styles */
+
+/* Global styles */
+* {
+    color: @fg_color;
+    background-color: @bg_color;
+}
+
+/* Window styles */
+window {
+    background-color: @window_bg_color;
+    color: @window_fg_color;
+}
+
+/* Button styles */
+button {
+    background-color: @button_bg_color;
+    color: @button_fg_color;
+    border: 1px solid @borders;
+    border-radius: 6px;
+    padding: 6px 12px;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: @button_active_bg_color;
+    color: @button_active_fg_color;
+}
+
+button:active {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+}
+
+/* Entry styles */
+entry {
+    background-color: @entry_bg_color;
+    color: @entry_fg_color;
+    border: 1px solid @borders;
+    border-radius: 6px;
+    padding: 6px 8px;
+}
+
+entry:focus {
+    border-color: @primary;
+    box-shadow: 0 0 0 2px alpha(@primary, 0.3);
+}
+
+/* Header bar styles */
+headerbar {
+    background-color: @headerbar_bg_color;
+    color: @headerbar_fg_color;
+    border-bottom: 1px solid @borders;
+}
+
+/* Sidebar styles */
+.sidebar {
+    background-color: @sidebar_bg_color;
+    color: @sidebar_fg_color;
+}
+
+/* Menu styles */
+menu {
+    background-color: @menu_bg_color;
+    color: @menu_fg_color;
+    border: 1px solid @borders;
+    border-radius: 6px;
+}
+
+menuitem {
+    padding: 6px 12px;
+}
+
+menuitem:hover {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+}
+
+/* Tooltip styles */
+tooltip {
+    background-color: @tooltip_bg_color;
+    color: @tooltip_fg_color;
+    border: 1px solid @borders;
+    border-radius: 6px;
+    padding: 6px 8px;
+}
+
+/* Selection styles */
+selection {
+    background-color: @selection_bg_color;
+    color: @selection_fg_color;
+}
+
+/* Link styles */
+link {
+    color: @link_color;
+}
+
+link:visited {
+    color: @visited_link_color;
+}
+
+/* Error styles */
+.error {
+    color: @error_color;
+}
+
+.warning {
+    color: @warning_color;
+}
+
+.success {
+    color: @success_color;
+}

@@ -1,0 +1,26 @@
+/*
+* Swaync Colors
+* Generated with Matugen
+*/
+
+@define-color surface #11140f;
+@define-color surface_variant #43483f;
+@define-color primary #a6d394;
+@define-color on_primary #13380a;
+@define-color secondary #bbcbb1;
+@define-color on_secondary #273421;
+@define-color tertiary #a0cfd1;
+@define-color on_tertiary #003739;
+@define-color error #ffb4ab;
+@define-color on_error #690005;
+@define-color outline #8d9387;
+@define-color shadow #000000;
+@define-color scrim #000000;
+
+/* Use dark colors by default */
+@define-color background @surface;
+@define-color background_alt alpha(@surface_variant, 0.4);
+@define-color text @on_primary;
+@define-color selected @primary;
+@define-color hover alpha(@primary, 0.4);
+@define-color urgent @error;

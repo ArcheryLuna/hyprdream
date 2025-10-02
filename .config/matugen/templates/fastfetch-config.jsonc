@@ -1,0 +1,158 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "source": "/home/seb/.config/fastfetch/asset/Marija.jpeg",
+    "type": "kitty",
+    "width": 35,
+    "height": 20,
+    "padding": {
+      "top": 1,
+      "left": 2,
+      "right": 4
+    }
+  },
+  "modules": [
+    {
+      "type": "title",
+      "format": "{#{{colors.secondary.default.hex}}}{user-name-colored}{#}@{#{{colors.tertiary.default.hex}}}{host-name-colored}{#}"
+    },
+    {
+      "type": "separator",
+      "string": "─"
+    },
+    {
+      "type": "os",
+      "key": " OS",
+      "keyColor": "{{colors.primary.default.hex}}"
+    },
+    {
+      "type": "host",
+      "key": "󰌢 Host",
+      "keyColor": "{{colors.primary.default.hex}}"
+    },
+    {
+      "type": "kernel",
+      "key": " Kernel",
+      "keyColor": "{{colors.primary.default.hex}}"
+    },
+    {
+      "type": "uptime",
+      "key": " Uptime",
+      "keyColor": "{{colors.primary.default.hex}}"
+    },
+    {
+      "type": "packages",
+      "key": "󰏖 Packages",
+      "keyColor": "{{colors.primary.default.hex}}"
+    },
+    {
+      "type": "shell",
+      "key": " Shell",
+      "keyColor": "{{colors.primary.default.hex}}"
+    },
+    {
+      "type": "display",
+      "key": "󰍹 Display",
+      "keyColor": "{{colors.primary.default.hex}}"
+    },
+    {
+      "type": "de",
+      "key": " DE",
+      "keyColor": "{{colors.primary.default.hex}}"
+    },
+    {
+      "type": "wm",
+      "key": " WM",
+      "keyColor": "{{colors.primary.default.hex}}"
+    },
+    {
+      "type": "wmtheme",
+      "key": "󰉼 WM Theme",
+      "keyColor": "{{colors.primary.default.hex}}"
+    },
+    {
+      "type": "theme",
+      "key": "🎨 Theme",
+      "keyColor": "{{colors.primary.default.hex}}"
+    },
+    {
+      "type": "icons",
+      "key": "󰀻 Icons",
+      "keyColor": "{{colors.primary.default.hex}}"
+    },
+    {
+      "type": "font",
+      "key": " Font",
+      "keyColor": "{{colors.primary.default.hex}}"
+    },
+    {
+      "type": "cursor",
+      "key": "󰇀 Cursor",
+      "keyColor": "{{colors.primary.default.hex}}"
+    },
+    {
+      "type": "terminal",
+      "key": " Terminal",
+      "keyColor": "{{colors.primary.default.hex}}"
+    },
+    {
+      "type": "terminalfont",
+      "key": " Terminal Font",
+      "keyColor": "{{colors.primary.default.hex}}"
+    },
+    {
+      "type": "cpu",
+      "key": "󰻠 CPU",
+      "keyColor": "{{colors.tertiary.default.hex}}"
+    },
+    {
+      "type": "gpu",
+      "key": "󰢮 GPU",
+      "keyColor": "{{colors.tertiary.default.hex}}"
+    },
+    {
+      "type": "memory",
+      "key": " Memory",
+      "keyColor": "{{colors.secondary.default.hex}}"
+    },
+    {
+      "type": "swap",
+      "key": "󰓡 Swap",
+      "keyColor": "{{colors.secondary.default.hex}}"
+    },
+    {
+      "type": "disk",
+      "key": "󰋊 Disk (/)",
+      "keyColor": "{{colors.secondary.default.hex}}",
+      "folders": "/"
+    },
+    {
+      "type": "localip",
+      "key": "󰩟 Local IP",
+      "keyColor": "{{colors.tertiary_container.default.hex}}"
+    },
+    {
+      "type": "battery",
+      "key": "󰁹 Battery",
+      "keyColor": "{{colors.error.default.hex}}"
+    },
+    {
+      "type": "poweradapter",
+      "key": "󰚥 Power Adapter",
+      "keyColor": "{{colors.error.default.hex}}"
+    },
+    {
+      "type": "locale",
+      "key": "󰗊 Locale",
+      "keyColor": "{{colors.on_surface.default.hex}}"
+    },
+    {
+      "type": "break"
+    },
+    {
+      "type": "colors",
+      "paddingLeft": 2,
+      "symbol": "circle"
+    }
+  ]
+}

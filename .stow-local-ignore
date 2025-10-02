@@ -1,0 +1,91 @@
+# Git files
+\.git
+\.gitignore
+\.gitmodules
+\.stow-local-ignore
+
+# Documentation and metadata
+README.*
+LICENSE.*
+CHANGELOG.*
+CONTRIBUTING.*
+\.md$
+\.txt$
+
+# Repository assets and previews
+repo_assets
+Preview
+screenshot.*
+preview.*
+
+# Backup and temporary files
+.*~
+\.bak$
+\.backup$
+\.old$
+\.orig$
+\.tmp$
+\.temp$
+\.swp$
+\.swo$
+
+# OS generated files
+\.DS_Store
+Thumbs\.db
+\.directory
+
+# IDE and editor files
+\.vscode
+\.idea
+.*\.sublime-.*
+
+# Log files
+\.log$
+logs
+
+# Cache directories
+\.cache
+cache
+
+# Build and compiled files
+build
+dist
+target
+\.o$
+\.a$
+\.so$
+\.exe$
+\.dll$
+
+# Node.js (if any)
+node_modules
+package-lock\.json
+yarn\.lock
+
+# Python (if any)
+__pycache__
+.*\.pyc$
+.*\.pyo$
+.*\.egg-info
+
+# Archives
+.*\.zip$
+.*\.tar\.gz$
+.*\.rar$
+.*\.7z$
+
+# Local configuration that shouldn't be stowed
+.*\.local$
+\.env$
+\.env\.local$
+
+# Sensitive files
+secrets
+private
+.*\.key$
+.*\.pem$
+.*\.p12$
+.*\.pfx$
+
+scripts/*
+pkglist.txt

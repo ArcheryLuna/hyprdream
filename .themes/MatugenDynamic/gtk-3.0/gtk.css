@@ -1,0 +1,171 @@
+/* MatugenDynamic GTK Theme Template */
+/* This template will be processed by Matugen to replace color variables */
+
+@define-color bg_color #11140f;
+@define-color fg_color #e1e4da;
+@define-color base_color #11140f;
+@define-color text_color #e1e4da;
+@define-color selected_bg_color #a6d394;
+@define-color selected_fg_color #13380a;
+@define-color tooltip_bg_color #32362f;
+@define-color tooltip_fg_color #e1e4da;
+
+/* Window colors */
+@define-color window_bg_color #11140f;
+@define-color window_fg_color #e1e4da;
+
+/* Button colors */
+@define-color button_bg_color #1d211b;
+@define-color button_fg_color #e1e4da;
+@define-color button_active_bg_color #a6d394;
+@define-color button_active_fg_color #13380a;
+
+/* Entry colors */
+@define-color entry_bg_color #191d17;
+@define-color entry_fg_color #e1e4da;
+
+/* Header bar colors */
+@define-color headerbar_bg_color #272b25;
+@define-color headerbar_fg_color #e1e4da;
+
+/* Sidebar colors */
+@define-color sidebar_bg_color #1d211b;
+@define-color sidebar_fg_color #e1e4da;
+
+/* Menu colors */
+@define-color menu_bg_color #32362f;
+@define-color menu_fg_color #e1e4da;
+
+/* Tooltip colors */
+@define-color tooltip_bg_color #32362f;
+@define-color tooltip_fg_color #e1e4da;
+
+/* Selection colors */
+@define-color selection_bg_color #a6d394;
+@define-color selection_fg_color #13380a;
+
+/* Border colors */
+@define-color borders #8d9387;
+@define-color unfocused_borders #43483f;
+
+/* Link colors */
+@define-color link_color #a6d394;
+@define-color visited_link_color #bbcbb1;
+
+/* Error colors */
+@define-color error_color #ffb4ab;
+@define-color warning_color #a0cfd1;
+@define-color success_color #bbcbb1;
+
+/* Global styles */
+* {
+    color: @fg_color;
+    background-color: @bg_color;
+}
+
+/* Window styles */
+window {
+    background-color: @window_bg_color;
+    color: @window_fg_color;
+}
+
+/* Button styles */
+button {
+    background-color: @button_bg_color;
+    color: @button_fg_color;
+    border: 1px solid @borders;
+    border-radius: 6px;
+    padding: 6px 12px;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: @button_active_bg_color;
+    color: @button_active_fg_color;
+}
+
+button:active {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+}
+
+/* Entry styles */
+entry {
+    background-color: @entry_bg_color;
+    color: @entry_fg_color;
+    border: 1px solid @borders;
+    border-radius: 6px;
+    padding: 6px 8px;
+}
+
+entry:focus {
+    border-color: @primary;
+    box-shadow: 0 0 0 2px alpha(@primary, 0.3);
+}
+
+/* Header bar styles */
+headerbar {
+    background-color: @headerbar_bg_color;
+    color: @headerbar_fg_color;
+    border-bottom: 1px solid @borders;
+}
+
+/* Sidebar styles */
+.sidebar {
+    background-color: @sidebar_bg_color;
+    color: @sidebar_fg_color;
+}
+
+/* Menu styles */
+menu {
+    background-color: @menu_bg_color;
+    color: @menu_fg_color;
+    border: 1px solid @borders;
+    border-radius: 6px;
+}
+
+menuitem {
+    padding: 6px 12px;
+}
+
+menuitem:hover {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+}
+
+/* Tooltip styles */
+tooltip {
+    background-color: @tooltip_bg_color;
+    color: @tooltip_fg_color;
+    border: 1px solid @borders;
+    border-radius: 6px;
+    padding: 6px 8px;
+}
+
+/* Selection styles */
+selection {
+    background-color: @selection_bg_color;
+    color: @selection_fg_color;
+}
+
+/* Link styles */
+link {
+    color: @link_color;
+}
+
+link:visited {
+    color: @visited_link_color;
+}
+
+/* Error styles */
+.error {
+    color: @error_color;
+}
+
+.warning {
+    color: @warning_color;
+}
+
+.success {
+    color: @success_color;
+}

@@ -1,0 +1,15 @@
+[SddmGreeterTheme]
+Name=vitreous
+Description=A Material Design-inspired SDDM theme
+Author=sane1090x
+Website=https://github.com/sane1090x/vitreous
+License=GPL-3.0-or-later
+Type=sddm-theme
+Version=1.0
+ConfigFile=Configs/vitreous.conf
+Screenshot=Preview/nightfox.jpg
+MainScript=Main.qml
+TranslationsDirectory=translations
+Theme-Id=vitreous
+Theme-API=2.0
+QtVersion=6
