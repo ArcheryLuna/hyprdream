@@ -260,4 +260,5 @@ If you encounter issues or have questions:
 ---
 
 **Note**: This configuration is optimized for Arch Linux. Some modifications may be needed for other distributions.
+
 **Note**: This was created for hyprland installations with NVIDIA graphics cards. Please modify the configuration if you are on a laptop, or if you are on an AMD or Intel GPU.
