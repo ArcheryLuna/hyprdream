@@ -73,7 +73,7 @@ A comprehensive Arch Linux dotfiles configuration featuring a modern Hyprland-ba
   - Beautiful blurred background with user avatar
   - Real-time clock, date, weather, and system info
   - Theme-integrated colors and styling
-- **Wallpaper Manager**: SWWW
+- **Wallpaper Manager**: AWWW
 
 ## 📦 Installation
 
@@ -121,23 +121,19 @@ The installation script performs the following steps:
 
 ```
 dotfiles/
-├── .config/                    # Application configurations
+├── xdg/.config/                # Application configs (stowed to ~/.config)
 │   ├── hypr/                  # Hyprland configuration
 │   ├── waybar/                # Status bar configuration
 │   ├── kitty/                 # Terminal configuration
-│   ├── nvim/                  # Neovim configuration
-│   ├── swaync/                # Notification daemon
-│   ├── matugen/               # Color generation templates
-│   ├── fastfetch/             # System info display
 │   └── ...                    # Other app configs
-├── .local/                     # Local user data
-├── .themes/                    # Custom themes
-├── sddm-theme/                 # Custom SDDM login theme
+├── themes/.themes/             # GTK themes (stowed to ~/.themes)
+├── home/.zshrc                 # Zsh configuration (stowed to ~/.zshrc)
+├── ssh/.ssh/                   # SSH config (stowed to ~/.ssh)
+├── sddm-theme/                 # SDDM theme (copied by install, not stowed)
+├── previews/                   # README screenshots only
 ├── Wallpapers/                 # Wallpaper collection
-├── scripts/                    # Installation and utility scripts
-├── .zshrc                     # Zsh configuration
-├── pkglist.txt                # Package list (120+ packages)
-└── README.md                  # This file
+├── scripts/                    # install.sh, fix-stow.sh
+└── pkglist.txt                # Package list
 ```
 
 ## 🎨 Themes
