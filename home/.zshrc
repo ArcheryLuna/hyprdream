@@ -70,6 +70,10 @@ export PATH="$BUN_INSTALL/bin:$PATH:${HOME}/.radicle/bin"
 
 export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
 
+# GPG commit signing needs the active TTY for pinentry
+export GPG_TTY=$(tty)
+gpg-connect-agent updatestartuptty /bye >/dev/null 2>&1 || true
+
 # Updating locales
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8

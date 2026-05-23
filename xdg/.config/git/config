@@ -1,7 +1,7 @@
 [user]
     name=ArcheryLuna
     email=me@archery-luna.com
-    signingkey=68C9532E17258569798BAD3F41F922FB090774D0
+    signingkey=41F922FB090774D0
 
 [core]
     compression=9
